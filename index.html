@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8e9e8">
+<title>Une petite pause pour toi 🌷</title>
+<style>
+:root{--cream:#fffaf4;--pink:#f4d9dc;--rose:#b96f82;--deep:#704b59;--sage:#8b9b7a;--ink:#59454b;--gold:#d5b778}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 20% 0%,#fff 0,#f8e9e8 42%,#f5e8dc 100%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
+main{width:min(100% - 24px,520px);margin:0 auto;padding:22px 0 36px}
+.hero{position:relative;overflow:hidden;text-align:center;background:rgba(255,250,244,.88);border:1px solid #eed6d5;border-radius:28px;padding:28px 20px 24px;box-shadow:0 16px 40px #8d5e6714}
+.eyebrow{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(31px,8vw,43px);line-height:1.04;font-weight:normal;margin:12px 0;color:var(--deep)}
+.sub{font:15px/1.65 system-ui,sans-serif;color:#866d73;max-width:340px;margin:0 auto}
+.ornament{font-size:25px;letter-spacing:7px;margin:14px 0 3px}
+.petal{position:absolute;opacity:.45;font-size:25px;pointer-events:none}
+.p1{top:17px;left:15px;transform:rotate(-25deg)}.p2{top:26px;right:17px;transform:rotate(25deg)}.p3{bottom:18px;left:23px}.p4{bottom:14px;right:23px}
+.section{margin-top:14px;background:rgba(255,250,244,.92);border:1px solid #eedbd7;border-radius:22px;padding:19px 17px;box-shadow:0 8px 25px #8d5e670b}
+.section h2{font-size:22px;font-weight:normal;margin:0 0 7px;color:var(--deep)}
+.section p{font:14px/1.65 system-ui,sans-serif;color:#806a70;margin:0 0 14px}
+button{font:600 14px/1.3 system-ui,sans-serif;border:0;border-radius:999px;padding:13px 16px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+button:active{transform:scale(.98)}
+.primary{background:var(--rose);color:white;box-shadow:0 5px 13px #b96f8230}
+.secondary{background:#f7e8e5;color:var(--deep);border:1px solid #ebd1d2}
+.bouquet{display:none;text-align:center;padding:14px 4px 2px;animation:appear .55s ease}
+.bouquet.show{display:block}
+.bigflowers{font-size:clamp(36px,10vw,53px);letter-spacing:1px;line-height:1.55}
+.revealnote{font:italic 16px/1.6 Georgia,serif;color:var(--deep);margin:7px auto 0;max-width:340px}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.drinks{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.drink{background:#fff7f2;color:var(--deep);border:1px solid #ecd7d2;border-radius:17px;padding:13px 5px;font-size:13px}
+.drink span{display:block;font-size:26px;margin-bottom:7px}
+.drink[aria-pressed="true"]{background:#f2dce0;border:2px solid var(--rose);padding:12px 4px}
+.result{display:none;margin-top:13px;border-radius:15px;background:#f8eeea;padding:13px;font:14px/1.6 system-ui,sans-serif;color:#765d65}
+.result.show{display:block;animation:appear .35s ease}
+.envelope{width:100%;display:flex;align-items:center;justify-content:center;gap:9px}
+.letter{display:none;margin-top:14px;padding:17px;border-radius:16px;background:#fff5f0;border:1px dashed #d7a5ad;font:15px/1.8 Georgia,serif;color:var(--deep);animation:appear .45s ease}
+.letter.show{display:block}
+.choices{display:grid;gap:8px}
+.choice{width:100%;text-align:left;background:#fff7f2;color:var(--deep);border:1px solid #ecd7d2;border-radius:14px}
+.choice small{display:block;font:12px/1.4 system-ui,sans-serif;color:#9a7d83;margin-top:4px}
+.response{display:none;background:#f4e7e3;padding:14px;border-radius:15px;margin-top:12px;font:14px/1.6 system-ui,sans-serif;color:#765d65}
+.response.show{display:block}
+.footer{text-align:center;padding:20px 12px 4px;color:#967d81;font:12px/1.7 system-ui,sans-serif}
+.footer strong{font-weight:600;color:#80626b}
+button:focus-visible{outline:3px solid #c38a9a;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="petal p1">✿</span><span class="petal p2">❀</span><span class="petal p3">✧</span><span class="petal p4">✿</span>
+    <div class="eyebrow">Un petit jardin rien que pour toi</div>
+    <h1>Une petite<br>pause pour toi</h1>
+    <p class="sub">Aujourd’hui, la seule mission importante : prendre soin de toi, doucement et à ton rythme.</p>
+    <div class="ornament">🌷 ✨ 🌿</div>
+    <p class="sub" style="font-size:13px">Aucun effort requis. Même sourire en retour n’est pas obligatoire. C’est écrit dans le règlement. 🙂</p>
+  </header>
+
+  <section class="section">
+    <h2>01. Un bouquet à découvrir</h2>
+    <p>J’ai cherché le moyen de t’envoyer des fleurs sans te demander de leur trouver un vase. La technologie a parfois du bon.</p>
+    <button class="primary" id="flowerBtn" aria-expanded="false">Ouvrir le bouquet 🌸</button>
+    <div class="bouquet" id="bouquet" aria-live="polite">
+      <div class="bigflowers">🌷 🌼 🌸<br>💐 🌿 🌷</div>
+      <div class="revealnote">Un bouquet virtuel, mais un souhait bien réel : que tu te sentes un peu mieux très bientôt.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>02. Choisis ta boisson imaginaire</h2>
+    <p>Elle est virtuelle, donc elle ne refroidit jamais. Pour la vraie boisson, il faudra faire appel à la cuisine.</p>
+    <div class="drinks" role="group" aria-label="Choisir une boisson">
+      <button class="drink" data-drink="thé" aria-pressed="false"><span>🍵</span>Thé doux</button>
+      <button class="drink" data-drink="chocolat chaud" aria-pressed="false"><span>☕</span>Chocolat</button>
+      <button class="drink" data-drink="tisane" aria-pressed="false"><span>🫖</span>Tisane</button>
+    </div>
+    <div class="result" id="drinkResult" aria-live="polite"></div>
+  </section>
+
+  <section class="section">
+    <h2>03. Une petite enveloppe</h2>
+    <p>Attention : ce message contient une dose raisonnable de gentillesse et aucune obligation de répondre.</p>
+    <button class="secondary envelope" id="letterBtn" aria-expanded="false">💌 Ouvrir le petit mot</button>
+    <div class="letter" id="letter" aria-live="polite">
+      Je voulais simplement t’envoyer une petite attention pour égayer ta journée. Repose-toi, prends soin de toi et laisse le monde patienter un peu.<br><br>
+      J’espère que tu retrouveras vite ton énergie. Et si cette page t’a arraché ne serait-ce qu’un petit sourire, son développeur considère que le projet est réussi. 🌷
+      <div style="text-align:right;margin-top:12px;font-style:italic">— Gédéon</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>04. Et toi, de quoi as-tu envie ?</h2>
+    <p>Tu peux choisir une réponse juste pour le plaisir. Ou fermer cette page et te reposer : c’est tout aussi valable.</p>
+    <div class="choices">
+      <button class="choice" data-response="smile">🌷 Ça m’a fait sourire <small>Une petite dose de bonne humeur reçue.</small></button>
+      <button class="choice" data-response="rest">🛌 Je vais me reposer <small>Excellente décision. Le repos passe en priorité.</small></button>
+      <button class="choice" data-response="chat">💬 Un peu de compagnie me ferait du bien <small>Une conversation tranquille, sans pression.</small></button>
+    </div>
+    <div class="response" id="response" aria-live="polite"></div>
+  </section>
+
+  <div class="footer">
+    Fait avec une pensée gentille, un soupçon de fleurs et <strong>zéro obligation de répondre</strong>.<br>
+    Prends soin de toi. 🌸
+  </div>
+</main>
+<script>
+const flowerBtn=document.getElementById('flowerBtn'), bouquet=document.getElementById('bouquet');
+flowerBtn.addEventListener('click',()=>{const show=!bouquet.classList.contains('show');bouquet.classList.toggle('show',show);flowerBtn.setAttribute('aria-expanded',String(show));flowerBtn.textContent=show?'Refermer le bouquet':'Ouvrir le bouquet 🌸';});
+const drinkMessages={
+'thé':'Un thé tout doux pour accompagner une pause. Imagine la chaleur de la tasse entre tes mains… et prends ton temps. 🍵',
+'chocolat chaud':'Chocolat chaud choisi ! Une boisson imaginaire riche en douceur — et sans vaisselle à laver. ☕',
+'tisane':'Une tisane toute tranquille pour l’ambiance cocooning. Installe-toi confortablement et laisse-toi souffler. 🫖'
+};
+document.querySelectorAll('[data-drink]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-drink]').forEach(b=>b.setAttribute('aria-pressed','false'));btn.setAttribute('aria-pressed','true');const out=document.getElementById('drinkResult');out.textContent=drinkMessages[btn.dataset.drink];out.classList.add('show');}));
+const letterBtn=document.getElementById('letterBtn'),letter=document.getElementById('letter');
+letterBtn.addEventListener('click',()=>{const show=!letter.classList.contains('show');letter.classList.toggle('show',show);letterBtn.setAttribute('aria-expanded',String(show));letterBtn.textContent=show?'💌 Refermer le petit mot':'💌 Ouvrir le petit mot';});
+const replies={
+smile:'Objectif atteint : une petite fleur de bonne humeur a poussé aujourd’hui. 🌷 Tu n’as rien d’autre à faire !',
+rest:'Très bon choix. Mode repos activé. Le monde peut attendre un peu — prends soin de toi. 🛌',
+chat:'Alors, si tu en as envie, tu peux m’écrire. On peut parler tranquillement, sans obligation de faire semblant d’aller parfaitement bien. 💛'
+};
+document.querySelectorAll('[data-response]').forEach(btn=>btn.addEventListener('click',()=>{const out=document.getElementById('response');out.textContent=replies[btn.dataset.response];out.classList.add('show');}));
+</script>
+</body>
+</html>
